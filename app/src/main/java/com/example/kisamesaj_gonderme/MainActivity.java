@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
                 intent.putExtra("sms_body", smsMetin);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "Başarılı", Toast.LENGTH_SHORT).show();
+
             }
         });
 

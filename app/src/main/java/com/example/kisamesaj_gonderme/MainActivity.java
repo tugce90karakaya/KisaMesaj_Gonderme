@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
  ImageButton smsGonder,emailGonder;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
                 intent.putExtra("sms_body", smsMetin);
                 startActivity(intent);
+                Toast.makeText(MainActivity.this, "Başarılı", Toast.LENGTH_SHORT).show();
             }
         });
 
